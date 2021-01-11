@@ -4,7 +4,8 @@ import { View, Text, ImageBackground } from 'react-native';
 import StyledButton from '../StyledButton';
 import styles from './styles';
 
-export default function CartItem({ name, tagLine, tagLineCTA, image }) {
+export default function CartItem(props) {
+    const { name, tagLine, tagLineCTA, image } = props.car;
     return (
         <View style={styles.carContainer}>
             <ImageBackground source={image} style={styles.image} />
