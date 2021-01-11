@@ -7,7 +7,12 @@ import CartItem from './components/CarItem';
 export default function App() {
     return (
         <View style={styles.container}>
-            <CartItem />
+            <CartItem
+                name={'Model X'}
+                tagLine={'Order Online for'}
+                tagLineCTA={'Touchless Delivery'}
+                image={require('./assets/images/ModelX.jpeg')}
+            />
             <StatusBar style="auto" />
         </View>
     );
